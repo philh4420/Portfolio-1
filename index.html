@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website for Phil">
+  <meta name="keywords" content="HTML, CSS, JavaScript, front-end, web development">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/favicon/favicon.ico">
+
+  <title>Phil's Portfolio</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header__title"><img src="assets/favicon/favicon.ico" alt="logo"></h1>
+    <nav class="header__nav">
+      <a href="#about" class="header__nav-link">About</a>
+      <a href="#projects" class="header__nav-link">Projects</a>
+      <a href="#contact" class="header__nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero" aria-label="intro">
+      <div class="hero__content">
+        <h1 class="hero__title">Hi, I'm Phil</h1>
+        <p class="hero__description">I'm a front-end developer passionate about building accessible web apps and
+          websites.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+
+      <div class="about-container">
+
+        <h2 class="about__title">About Me</h2>
+
+        <p class="about__description">Hi there! I'm Phil, a front-end developer based in St. Albans.</p>
+
+        <section class="about__skills">
+          <h3 class="about__skills-title">Skills</h3>
+          <ul class="about__skills-list">
+            <li class="about__skill"><i class="fab fa-html5"></i> HTML5</li>
+            <li class="about__skill"><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li class="about__skill"><i class="fab fa-js"></i> JavaScript</li>
+            <li class="about__skill"><i class="fas fa-universal-access"></i> Accessibility</li>
+            <li class="about__skill"><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+          </ul>
+        </section>
+
+
+        <section class="about__education">
+          <h3 class="about__education-title">Education</h3>
+          <p class="about__education-description">HTML, CSS and Bootstrap course from Udemy</p>
+          <p class="about__education-description">HTML, CSS and SCSS Wave 3 Front End Web Development from Open
+            Classrooms.</p>
+        </section>
+
+      </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="projects__title">Projects</h2>
+
+      <div class="projects-container">
+
+        <article class="project">
+          <div class="project__content">
+            <h3 class="project__title">Booki</h3>
+            <p class="project__description">A simple responsive accommodation/ activities site built with HTML, CSS.</p>
+            <div class="project__details">
+              <img src="assets/img/booki.webp" Project 1 Image" class="project__image">
+              <p class="project__tech">Technologies used: HTML, CSS</p>
+              <p class="project__date">Completion date: October 2022</p>
+            </div>
+          </div>
+          <a href="https://github.com" class="project__link" target="_blank">View Code</a>
+        </article>
+
+        <article class="project">
+          <div class="project__content">
+            <h3 class="project__title">OhmyFood</h3>
+            <p class="project__description">A simple responsive restaurant site built with HTML, CSS.</p>
+            <div class="project__details">
+              <img src="assets/img/ohmyfood.webp" alt="Project 2 Image" class="project__image">
+              <p class="project__tech">Technologies used: HTML, CSS</p>
+              <p class="project__date">Completion date: March 2023</p>
+            </div>
+          </div>
+          <a href="https://github.com" class="project__link" target="_blank">View Code</a>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+      <h2 class="contact__title">Contact</h2>
+
+      <div class="contact-links">
+
+        <p class="contact__info"><i class="fa-solid fa-envelope"></i> <a href="mailto:example@example.com"
+            class="contact__link">example@example.com</a>
+        </p>
+
+        <p class="contact__info"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/philhigdon/"
+            class="contact__link" target="_blank">Phil</a></p>
+
+        <p class="contact__info"><i class="fab fa-github"></i> <a href="https://github.com/philh4420"
+            class="contact__link" target="_blank">Phil</a></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; Phil 2024</p>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
